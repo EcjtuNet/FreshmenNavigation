@@ -28,18 +28,7 @@ header {
 	width: 100%;
 	height: $header-height;
 	background: $black;
-	@include boxShadow(0px, 2px, 3px, 0px);
-}
-#head-content {
-	width: 960px;
-	height: $header-height;
-	margin: 0 auto;
-}
-#nav {
-	width: 960px;
-	// padding: 0 168px;
-	height: $header-height;
-	margin: 0 auto;
+	@include boxShadow(0px, 1px, 2px, 0px);
 
 	ul {
 		float: left;
@@ -55,30 +44,90 @@ header {
 				font: $nav-font;
 				text-shadow: 0px 1px 2px rgba(0,0,0,.15);
 			}
-			a.shopping {
-				background: url($shopping-path) 8px 8px no-repeat;
-				&:hover {
-					color: $red;
-				}
-			}
-			a.food {
-				background: url($food-path) 8px 8px no-repeat;
-				&:hover {
-					color: $green;
-				}
-			}
-			a.home {
-				background: url($home-path) 8px 8px no-repeat;
-				&:hover {
-					color: $yellow;
-				}
-			}
-			a.travel {
-				background: url($travel-path) 8px 8px no-repeat;
-				&:hover {
-					color: $lightblue;
-				}
-			}
+		}
+	}
+}
+.more {
+	position: fixed;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	width: $header-height;
+	height: $header-height;
+	text-align: center;
+	color: #fff;
+	font: normal 24px/64px Microsoft Yahei;
+	cursor: default;
+
+	a.check {
+		position: fixed;
+		top: $header-height;
+		right: 0;
+		display: none;
+		padding: 0 12px;
+		background: $black;
+		font: $p-font-medium;
+		@include boxShadow(0px, 1px, 2px, 0px);
+
+		&:hover {
+			color: $lightblue;
+		}
+	}
+	a.morePic {
+		position: fixed;
+		top: $header-height + 42px;
+		right: 0;
+		display: none;
+		padding: 0 12px;
+		background: $black;
+		font: $p-font-medium;
+		@include boxShadow(0px, 1px, 2px, 0px);
+
+		&:hover {
+			color: $lightblue;
+		}
+	}
+	&:hover {
+		color: $lightblue;
+	}
+	&:hover a.check, &:hover a.morePic {
+		display: inline-block;
+	}
+}
+
+#head-content {
+	width: 960px;
+	height: $header-height;
+	margin: 0 auto;
+}
+#nav {
+	width: 960px;
+	// padding: 0 168px;
+	height: $header-height;
+	margin: 0 auto;
+
+	a.shopping {
+		background: url($shopping-path) 8px 8px no-repeat;
+		&:hover {
+			color: $red;
+		}
+	}
+	a.food {
+		background: url($food-path) 8px 8px no-repeat;
+		&:hover {
+			color: $green;
+		}
+	}
+	a.home {
+		background: url($home-path) 8px 8px no-repeat;
+		&:hover {
+			color: $yellow;
+		}
+	}
+	a.travel {
+		background: url($travel-path) 8px 8px no-repeat;
+		&:hover {
+			color: $lightblue;
 		}
 	}
 }
@@ -93,7 +142,6 @@ header {
 		background: url($logo-h-path) left center no-repeat;
 	}
 }
-
 
 
 
@@ -241,6 +289,34 @@ header {
 
 
 
+footer {
+	width: 100%;
+	margin-top: 36px;
+	padding: 24px 0;
+	background: $black;
+
+	p {
+		margin: 0 0 14px 0;
+		text-align: center;
+		letter-spacing: .05em;
+		font: $footer-font;
+		color: #fff;
+
+		a {
+			display: inline-block;
+			margin: 0 3px;
+			color: #fff;
+
+			&:hover {
+				color: $lightblue;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+
+
 .scroll {
 	position: fixed;
 	bottom: $scroll-size;
@@ -254,7 +330,7 @@ header {
 		position: absolute;
 		border-left: 24px solid transparent;
 		border-right: 24px solid transparent;
-		border-bottom: 24px solid $black;
+		border-bottom: 24px solid $lightblue;
 	}
 	&:after {
 		content: "";
@@ -263,7 +339,7 @@ header {
 		bottom: 0;
 		width: 32px;
 		height: 24px;
-		background: $black;
-		@include boxShadow(0px, 2px, 3px, 0px);
+		background: $lightblue;
+		// @include boxShadow(0px, 2px, 3px, 0px);
 	}
 }

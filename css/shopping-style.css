@@ -8244,11 +8244,69 @@ header {
   width: 100%;
   height: 64px;
   background: #222222;
-  -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
-  -ms-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
-  -o-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3); }
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3); }
+  header ul {
+    float: left;
+    margin: 0 auto; }
+    header ul li {
+      float: left;
+      padding: 0 49px; }
+      header ul li a {
+        display: inline-block;
+        padding-left: 64px;
+        color: #fff;
+        font: normal 36px/64px Microsoft Jhenghei, Microsoft Yahei, Heiti, Arial, sans-serif;
+        text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15); }
+
+.more {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  color: #fff;
+  font: normal 24px/64px Microsoft Yahei;
+  cursor: default; }
+  .more a.check {
+    position: fixed;
+    top: 64px;
+    right: 0;
+    display: none;
+    padding: 0 12px;
+    background: #222222;
+    font: normal 24px/42px Microsoft Jhenghei, Microsoft Yahei, Heiti, Arial, sans-serif;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3); }
+    .more a.check:hover {
+      color: #00bbd1; }
+  .more a.morePic {
+    position: fixed;
+    top: 106px;
+    right: 0;
+    display: none;
+    padding: 0 12px;
+    background: #222222;
+    font: normal 24px/42px Microsoft Jhenghei, Microsoft Yahei, Heiti, Arial, sans-serif;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3); }
+    .more a.morePic:hover {
+      color: #00bbd1; }
+  .more:hover {
+    color: #00bbd1; }
+  .more:hover a.check, .more:hover a.morePic {
+    display: inline-block; }
 
 #head-content {
   width: 960px;
@@ -8259,34 +8317,22 @@ header {
   width: 960px;
   height: 64px;
   margin: 0 auto; }
-  #nav ul {
-    float: left;
-    margin: 0 auto; }
-    #nav ul li {
-      float: left;
-      padding: 0 49px; }
-      #nav ul li a {
-        display: inline-block;
-        padding-left: 64px;
-        color: #fff;
-        font: normal 36px/64px Microsoft Jhenghei, Microsoft Yahei, Heiti, Arial, sans-serif;
-        text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15); }
-      #nav ul li a.shopping {
-        background: url("../images/shopping.png") 8px 8px no-repeat; }
-        #nav ul li a.shopping:hover {
-          color: #cc543a; }
-      #nav ul li a.food {
-        background: url("../images/food.png") 8px 8px no-repeat; }
-        #nav ul li a.food:hover {
-          color: #9ad253; }
-      #nav ul li a.home {
-        background: url("../images/home.png") 8px 8px no-repeat; }
-        #nav ul li a.home:hover {
-          color: #f9bf45; }
-      #nav ul li a.travel {
-        background: url("../images/travel.png") 8px 8px no-repeat; }
-        #nav ul li a.travel:hover {
-          color: #00bbd1; }
+  #nav a.shopping {
+    background: url("../images/shopping.png") 8px 8px no-repeat; }
+    #nav a.shopping:hover {
+      color: #cc543a; }
+  #nav a.food {
+    background: url("../images/food.png") 8px 8px no-repeat; }
+    #nav a.food:hover {
+      color: #9ad253; }
+  #nav a.home {
+    background: url("../images/home.png") 8px 8px no-repeat; }
+    #nav a.home:hover {
+      color: #f9bf45; }
+  #nav a.travel {
+    background: url("../images/travel.png") 8px 8px no-repeat; }
+    #nav a.travel:hover {
+      color: #00bbd1; }
 
 #logo {
   float: left;
@@ -8302,7 +8348,6 @@ header {
 
 #container {
   width: 100%;
-  height: 1166px;
   padding-top: 64px; }
 
 #content {
@@ -8311,6 +8356,23 @@ header {
   height: 100%;
   margin: 0 auto;
   clear: both; }
+  #content ul {
+    display: inline-block;
+    margin: 0 auto; }
+    #content ul li {
+      position: relative;
+      margin: 12px 0;
+      padding: 12px;
+      background: #218ead;
+      color: #fff;
+      font: normal 24px/48px Microsoft Jhenghei, Microsoft Yahei, Heiti, Arial, sans-serif;
+      -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+      -ms-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+      -o-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+      box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3); }
+      #content ul li h3 {
+        font: bold 42px/64px Microsoft Jhenghei, Microsoft Yahei, Heiti, Arial, sans-serif; }
 
 h2 {
   position: relative;
@@ -8461,6 +8523,30 @@ h2 {
   border: 1px solid #00bbd1;
   font: normal 17px/24px Microsoft Yahei, Heiti, Arial, sans-serif; }
 
+#shop a {
+  color: #fff; }
+  #shop a:hover {
+    text-decoration: underline; }
+
+footer {
+  width: 100%;
+  margin-top: 36px;
+  padding: 24px 0;
+  background: #222222; }
+  footer p {
+    margin: 0 0 14px 0;
+    text-align: center;
+    letter-spacing: .05em;
+    font: normal 14px/24px Arial, sans-serif;
+    color: #fff; }
+    footer p a {
+      display: inline-block;
+      margin: 0 3px;
+      color: #fff; }
+      footer p a:hover {
+        color: #00bbd1;
+        text-decoration: underline; }
+
 .scroll {
   position: fixed;
   bottom: 48px;
@@ -8473,7 +8559,7 @@ h2 {
     position: absolute;
     border-left: 24px solid transparent;
     border-right: 24px solid transparent;
-    border-bottom: 24px solid #222222; }
+    border-bottom: 24px solid #00bbd1; }
   .scroll:after {
     content: "";
     position: absolute;
@@ -8481,9 +8567,4 @@ h2 {
     bottom: 0;
     width: 32px;
     height: 24px;
-    background: #222222;
-    -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
-    -ms-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
-    -o-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3); }
+    background: #00bbd1; }
