@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/*
+ * Sass Variable
+ */
+
+/* Path ---------------------------------------------------------- */
+
+$logo-path: "../images/logo.png";
+$logo-h-path: "../images/logo-h.png";
+
+$shopping-path: "../images/shopping.png";
+$food-path: "../images/food.png";
+$home-path: "../images/home.png";
+$travel-path: "../images/travel.png";
+
+
+/* Color ---------------------------------------------------------- */
+
+$lightblue: #00bbd1;
+$blue:		#218ead;
+$darkblue:	#004f58;
+
+$red: #CC543A;
+$orange: #ff7800;
+
+$green: #9ad253;
+
+$yellow: #F9BF45;
+
+$black: #222;
+
+// animation
+
+
+/* Font ---------------------------------------------------------- */
+$nav-font:   normal 36px/64px Microsoft Jhenghei, Microsoft Yahei, Heiti, Arial, sans-serif;
+$axis-font:  normal 24px/48px Microsoft Jhenghei, Microsoft Yahei, Heiti, Arial, sans-serif;
+
+$title-font: normal 36px/64px Microsoft Jhenghei, Microsoft Yahei, Heiti, Arial, sans-serif;
+$h3-font: bold 42px/64px Microsoft Jhenghei, Microsoft Yahei, Heiti, Arial, sans-serif;
+$p-font: normal 24px/48px Microsoft Jhenghei, Microsoft Yahei, Heiti, Arial, sans-serif;
+$p-font-small: normal 16px/28px Microsoft Jhenghei, Microsoft Yahei, Heiti, Arial, sans-serif;
+$box-font: normal 24px/28px Microsoft Jhenghei, Microsoft Yahei, Heiti, Arial, sans-serif;
+
+/* Layout ---------------------------------------------------------- */
+
+// header
+$header-height: 64px;
+
+
+// container
+
+$axis-weight: 5px;
+$dot-size: 24px;
+
+
+// footer
+
+
+// other
+$scroll-size: 48px;

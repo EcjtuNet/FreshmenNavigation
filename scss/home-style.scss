@@ -1,0 +1,217 @@
+@charset "utf-8";
+
+/* Freshmen Navigation
+ *
+ * @author           Lancelot at EcjtuNet
+ * @version          0.1
+ * @last-time        2014.8.16
+ *
+ */
+
+
+/* 文件载入 ----------------------------------------------------------*/
+
+@import  "data";    			// Sass Variable
+@import  "reset";   			// CSS Reset
+@import  "mixin";   			// Mixin
+@import  "csshake"; 			// CSShake
+@import  "pre"; 				// CSS Pre
+@import  "animation";			// Animation
+
+
+/* CSS ---------------------------------------------------------------*/
+
+@charset "utf-8";
+
+/* Freshmen Navigation
+ *
+ * @author           Lancelot at EcjtuNet
+ * @version          0.1
+ * @last-time        2014.8.16
+ *
+ */
+
+
+/* 文件载入 ----------------------------------------------------------*/
+
+@import  "data";    			// Sass Variable
+@import  "reset";   			// CSS Reset
+@import  "mixin";   			// Mixin
+@import  "csshake"; 			// CSShake
+@import  "pre"; 				// CSS Pre
+@import  "animation";			// Animation
+
+
+/* CSS ---------------------------------------------------------------*/
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: $header-height;
+	background: $black;
+	@include boxShadow(0px, 2px, 3px, 0px);
+}
+#head-content {
+	width: 960px;
+	height: $header-height;
+	margin: 0 auto;
+}
+#nav {
+	width: 960px;
+	// padding: 0 168px;
+	height: $header-height;
+	margin: 0 auto;
+
+	ul {
+		float: left;
+		margin: 0 auto;
+		li {
+			float: left;
+			padding: 0 49px;
+
+			a {
+				display: inline-block;
+				padding-left: 64px;
+				color: #fff;
+				font: $nav-font;
+				text-shadow: 0px 1px 2px rgba(0,0,0,.15);
+			}
+			a.shopping {
+				background: url($shopping-path) 8px 8px no-repeat;
+				&:hover {
+					color: $red;
+				}
+			}
+			a.food {
+				background: url($food-path) 8px 8px no-repeat;
+				&:hover {
+					color: $green;
+				}
+			}
+			a.home {
+				background: url($home-path) 8px 8px no-repeat;
+				&:hover {
+					color: $yellow;
+				}
+			}
+			a.travel {
+				background: url($travel-path) 8px 8px no-repeat;
+				&:hover {
+					color: $lightblue;
+				}
+			}
+		}
+	}
+}
+#logo {
+	float: left;
+	width: 167px;
+	height: 64px;
+	background: url($logo-path) left center no-repeat;
+	@include transition(background, .3s);
+
+	&:hover {
+		background: url($logo-h-path) left center no-repeat;
+	}
+}
+
+
+
+#container {
+	width: 100%;
+	height: 1166px;
+	padding-top: $header-height;
+}
+#content {
+	position: relative;
+	width: 960px;
+	height: 100%;
+	margin: 0 auto;
+	// padding: 24px 0;
+	clear: both;
+
+	h2 {
+		@include title();
+	}
+	article {
+		position: relative;
+		p {
+			margin: 12px 0;
+			padding: 0 12px;
+			@include boxShadow(1px, 1px, 3px, 0px);
+		}
+	}
+}
+#dorm, #teaching {
+	position: relative;
+}
+.dorm-left, .teach-left {
+	display: inline-block;
+	width: 570px;
+	font: $p-font;
+	background: $blue;
+	color: #fff;
+
+	span {
+		font-weight: bold;
+		font-size: 28px;
+	}
+}
+.dorm-right {
+	position: absolute;
+	right: 0;
+	display: inline-block;
+	width: 330px;
+	height: 486px;
+	font: $p-font-small;
+	background: rgba(33,142,173,.1);
+	color: $blue;
+
+	span {
+		font-weight: bold;
+	}
+}
+.teach-right {
+	position: absolute;
+	right: 0;
+	display: inline-block;
+	width: 330px;
+	height: 2334px;
+	font: $p-font;
+	background: rgba(33,142,173,.1);
+	color: $blue;
+
+	span {
+		font-weight: bold;
+		font-size: 28px;
+	}
+}
+
+.scroll {
+	position: fixed;
+	bottom: $scroll-size;
+	right: $scroll-size;
+	width: $scroll-size;
+	height: $scroll-size;
+	background: transparent;
+
+	&:before {
+		content: "";
+		position: absolute;
+		border-left: 24px solid transparent;
+		border-right: 24px solid transparent;
+		border-bottom: 24px solid $black;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		left: 8px;
+		bottom: 0;
+		width: 32px;
+		height: 24px;
+		background: $black;
+		@include boxShadow(0px, 2px, 3px, 0px);
+	}
+}
